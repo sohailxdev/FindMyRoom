@@ -34,7 +34,8 @@ app.use("/api/v1/user", userRouter);
 app.use("/api/v1/seller", sellerRouter);
 app.use("/api/v1/review", reviewRouter);
 
-const port = process.env.PORT || 8000;
-app.listen(port, () => {
-  console.log(`listening on port ${port} ...`);
-});
+// const port = process.env.PORT || 8000;
+// app.listen(port, () => {
+//   console.log(`listening on port ${port} ...`);
+// });
+export default app;
