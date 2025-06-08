@@ -1,14 +1,14 @@
 import express, { urlencoded } from "express";
 import dotenv from "dotenv";
-import { Rooms } from "./models/Rooms.models.js";
-import { connectDB } from "./db/connectDB.js";
+import { Rooms } from "./src/models/Rooms.models.js";
+import { connectDB } from "./src/db/connectDB.js";
 import cors from "cors";
-import roomRouter from "./routes/room.routes.js";
-import userRouter from "./routes/user.routes.js";
-import sellerRouter from "./routes/seller.routes.js";
+import roomRouter from "./src/routes/room.routes.js";
+import userRouter from "./src/routes/user.routes.js";
+import sellerRouter from "./src/routes/seller.routes.js";
 import { v2 as cloudinary } from "cloudinary";
 import multer from "multer";
-import reviewRouter from "./routes/review.routes.js";
+import reviewRouter from "./src/routes/review.routes.js";
 
 dotenv.config();
 
